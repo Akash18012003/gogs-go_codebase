@@ -2617,6 +2617,16 @@
         {
           "confidence": 1.0,
           "provenance_kind": "graph",
+          "source_file": ".agents/skills/ghsa/SKILL.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".agents/skills/react-doctor/SKILL.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
           "source_file": ".github/CONTRIBUTING.md"
         },
         {
@@ -2693,6 +2703,16 @@
           "confidence": 1.0,
           "provenance_kind": "graph",
           "source_file": ".golangci.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".moon/tasks/all.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".moon/workspace.yml"
         },
         {
           "confidence": 1.0,
@@ -2833,6 +2853,11 @@
           "confidence": 1.0,
           "provenance_kind": "graph",
           "source_file": "internal/database/testdata/backup/Notice.golden.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "mockgen.go"
         },
         {
           "confidence": 1.0,
@@ -4201,66 +4226,5 @@
   "sealed_generation": "4db25d17dc619c52dee39fdebd571b06f30434232d0c8147f2596b0f35c16fc2",
   "seams": [],
   "source_commit": "13e642ba3eb6d958fa08219df2960f84d156cd35",
-  "unresolved_claims": [
-    {
-      "evidence": [
-        {
-          "confidence": 1.0,
-          "provenance_kind": "graph",
-          "source_file": ".agents/skills/ghsa/SKILL.md"
-        }
-      ],
-      "id": "claim:file:.agents/skills/ghsa/SKILL.md",
-      "reason": "no Module Map entry claims this file",
-      "subject": "file:.agents/skills/ghsa/SKILL.md"
-    },
-    {
-      "evidence": [
-        {
-          "confidence": 1.0,
-          "provenance_kind": "graph",
-          "source_file": ".agents/skills/react-doctor/SKILL.md"
-        }
-      ],
-      "id": "claim:file:.agents/skills/react-doctor/SKILL.md",
-      "reason": "no Module Map entry claims this file",
-      "subject": "file:.agents/skills/react-doctor/SKILL.md"
-    },
-    {
-      "evidence": [
-        {
-          "confidence": 1.0,
-          "provenance_kind": "graph",
-          "source_file": ".moon/tasks/all.yml"
-        }
-      ],
-      "id": "claim:file:.moon/tasks/all.yml",
-      "reason": "no Module Map entry claims this file",
-      "subject": "file:.moon/tasks/all.yml"
-    },
-    {
-      "evidence": [
-        {
-          "confidence": 1.0,
-          "provenance_kind": "graph",
-          "source_file": ".moon/workspace.yml"
-        }
-      ],
-      "id": "claim:file:.moon/workspace.yml",
-      "reason": "no Module Map entry claims this file",
-      "subject": "file:.moon/workspace.yml"
-    },
-    {
-      "evidence": [
-        {
-          "confidence": 1.0,
-          "provenance_kind": "graph",
-          "source_file": "mockgen.go"
-        }
-      ],
-      "id": "claim:file:mockgen.go",
-      "reason": "no Module Map entry claims this file",
-      "subject": "file:mockgen.go"
-    }
-  ]
+  "unresolved_claims": []
 }

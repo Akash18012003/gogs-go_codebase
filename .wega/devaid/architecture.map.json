@@ -217,7 +217,10 @@
         "public/plugins/codemirror-5.17.0/.travis.yml",
         "scripts",
         "skills-lock.json",
-        "trivy.yaml"
+        "trivy.yaml",
+        ".agents",
+        ".moon",
+        "mockgen.go"
       ],
       "purpose": "Operations",
       "responsibility": "Builds, delivers and documents the Codebase; nothing in it runs as part of a Capability"
