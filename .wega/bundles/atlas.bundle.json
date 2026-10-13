@@ -1,0 +1,1368 @@
+{
+  "bundle_type": "atlas",
+  "meta": {
+    "architecture_hashes": {
+      "intended": "sha256:6b8e7cae176f4a78f5375580544765621c5e0ba92a0256f678f92d18ff8dd0f1",
+      "observed": "sha256:366624115ca3a827103d65d0bbd83fb9fc2d6e9b23013804d749ab32581a7eae"
+    },
+    "artifact_digest": "sha256:33aa6e628043f7f821f00ebde77f3f279552338eac23d75918c4d76bd0aeae4d",
+    "created_at": "2026-10-13T13:16:44+00:00",
+    "designed": false,
+    "evidence_rung": 1,
+    "generator": "wegactl",
+    "graph_backend": "go-sqlite",
+    "graph_backend_version": "0.6.1",
+    "graph_generation": "4db25d17dc619c52dee39fdebd571b06f30434232d0c8147f2596b0f35c16fc2",
+    "graph_schema_version": 2,
+    "repo": "Akash18012003/gogs-go_codebase",
+    "schema_version": 3,
+    "source_branch": "wega/architecture",
+    "source_commit": "13e642ba3eb6d958fa08219df2960f84d156cd35"
+  },
+  "payload": {
+    "architecture": {
+      "architecture_delta": {
+        "intended_hash": "6b8e7cae176f4a78f5375580544765621c5e0ba92a0256f678f92d18ff8dd0f1",
+        "observed_hash": "366624115ca3a827103d65d0bbd83fb9fc2d6e9b23013804d749ab32581a7eae",
+        "operations": [],
+        "schema_version": 2
+      },
+      "flow_delta": {
+        "added": [],
+        "changed": [],
+        "removed": []
+      },
+      "projection": {
+        "components": [
+          {
+            "children": [
+              {
+                "children": [],
+                "delta_operations": [],
+                "description": "",
+                "files": [
+                  "web/src/pages/repo/Commit.search.ts",
+                  "web/src/pages/repo/Commit.tsx"
+                ],
+                "id": "gogs.repo.ui",
+                "label": "Present repository commits and changes",
+                "state": "observed-only"
+              },
+              {
+                "children": [],
+                "delta_operations": [],
+                "description": "",
+                "files": [
+                  "web/src/pages/user/Activate.tsx",
+                  "web/src/pages/user/MFA.tsx",
+                  "web/src/pages/user/ResetPassword.tsx",
+                  "web/src/pages/user/SignIn.tsx",
+                  "web/src/pages/user/SignUp.tsx"
+                ],
+                "id": "gogs.user.ui",
+                "label": "Sign in, register and recover accounts",
+                "state": "observed-only"
+              }
+            ],
+            "delta_operations": [],
+            "description": "",
+            "files": [
+              "cmd/gogs/admin.go",
+              "cmd/gogs/backup.go",
+              "cmd/gogs/cmd.go",
+              "cmd/gogs/hook.go",
+              "cmd/gogs/import.go",
+              "cmd/gogs/internal/web/cache.go",
+              "cmd/gogs/internal/web/repo_context.go",
+              "cmd/gogs/internal/web/web.go",
+              "cmd/gogs/internal/web/web_repo.go",
+              "cmd/gogs/internal/web/webapi.go",
+              "cmd/gogs/internal/web/webapi_repo.go",
+              "cmd/gogs/internal/web/webapi_user.go",
+              "cmd/gogs/internal/web/webapp_dev.go",
+              "cmd/gogs/internal/web/webapp_prod.go",
+              "cmd/gogs/internal/web/webapp_render_test.go",
+              "cmd/gogs/main.go",
+              "cmd/gogs/restore.go",
+              "cmd/gogs/serv.go",
+              "conf/app.ini",
+              "conf/embed.go",
+              "conf/embed_test.go",
+              "conf/locale/locale_bg-BG.ini",
+              "conf/locale/locale_cs-CZ.ini",
+              "conf/locale/locale_de-DE.ini",
+              "conf/locale/locale_en-GB.ini",
+              "conf/locale/locale_en-US.ini",
+              "conf/locale/locale_es-ES.ini",
+              "conf/locale/locale_fa-IR.ini",
+              "conf/locale/locale_fi-FI.ini",
+              "conf/locale/locale_fr-FR.ini",
+              "conf/locale/locale_gl-ES.ini",
+              "conf/locale/locale_hu-HU.ini",
+              "conf/locale/locale_id-ID.ini",
+              "conf/locale/locale_it-IT.ini",
+              "conf/locale/locale_ja-JP.ini",
+              "conf/locale/locale_ko-KR.ini",
+              "conf/locale/locale_lv-LV.ini",
+              "conf/locale/locale_mn-MN.ini",
+              "conf/locale/locale_nl-NL.ini",
+              "conf/locale/locale_pl-PL.ini",
+              "conf/locale/locale_pt-BR.ini",
+              "conf/locale/locale_pt-PT.ini",
+              "conf/locale/locale_ro-RO.ini",
+              "conf/locale/locale_ru-RU.ini",
+              "conf/locale/locale_sk-SK.ini",
+              "conf/locale/locale_sr-SP.ini",
+              "conf/locale/locale_sv-SE.ini",
+              "conf/locale/locale_tr-TR.ini",
+              "conf/locale/locale_uk-UA.ini",
+              "conf/locale/locale_vi-VN.ini",
+              "conf/locale/locale_zh-CN.ini",
+              "conf/locale/locale_zh-HK.ini",
+              "conf/locale/locale_zh-TW.ini",
+              "internal/app/api.go",
+              "internal/app/api_test.go",
+              "internal/app/metrics.go",
+              "internal/auth/auth.go",
+              "internal/auth/github/config.go",
+              "internal/auth/github/provider.go",
+              "internal/auth/ldap/README.md",
+              "internal/auth/ldap/config.go",
+              "internal/auth/ldap/provider.go",
+              "internal/auth/pam/config.go",
+              "internal/auth/pam/pam.go",
+              "internal/auth/pam/pam_stub.go",
+              "internal/auth/pam/provider.go",
+              "internal/auth/smtp/config.go",
+              "internal/auth/smtp/provider.go",
+              "internal/authx/basic.go",
+              "internal/authx/basic_test.go",
+              "internal/avatar/avatar.go",
+              "internal/avatar/avatar_test.go",
+              "internal/conf/computed.go",
+              "internal/conf/computed_test.go",
+              "internal/conf/conf.go",
+              "internal/conf/conf_test.go",
+              "internal/conf/log.go",
+              "internal/conf/log_test.go",
+              "internal/conf/mocks.go",
+              "internal/conf/static.go",
+              "internal/conf/static_minwinsvc.go",
+              "internal/conf/static_test.go",
+              "internal/conf/testdata/TestInit.golden.ini",
+              "internal/conf/testdata/custom.ini",
+              "internal/conf/utils.go",
+              "internal/conf/utils_test.go",
+              "internal/context/api.go",
+              "internal/context/api_org.go",
+              "internal/context/auth.go",
+              "internal/context/auth_test.go",
+              "internal/context/context.go",
+              "internal/context/go_get.go",
+              "internal/context/notice.go",
+              "internal/context/org.go",
+              "internal/context/repo.go",
+              "internal/context/store.go",
+              "internal/context/user.go",
+              "internal/cron/cron.go",
+              "internal/cryptox/aes.go",
+              "internal/cryptox/aes_test.go",
+              "internal/cryptox/md5.go",
+              "internal/cryptox/md5_test.go",
+              "internal/cryptox/sha.go",
+              "internal/cryptox/sha_test.go",
+              "internal/database/access_tokens.go",
+              "internal/database/access_tokens_test.go",
+              "internal/database/actions.go",
+              "internal/database/actions_test.go",
+              "internal/database/attachment.go",
+              "internal/database/backup.go",
+              "internal/database/backup_test.go",
+              "internal/database/comment.go",
+              "internal/database/database.go",
+              "internal/database/error.go",
+              "internal/database/issue.go",
+              "internal/database/issue_label.go",
+              "internal/database/issue_mail.go",
+              "internal/database/lfs.go",
+              "internal/database/lfs_test.go",
+              "internal/database/login_source_files.go",
+              "internal/database/login_source_files_test.go",
+              "internal/database/login_sources.go",
+              "internal/database/login_sources_test.go",
+              "internal/database/main_test.go",
+              "internal/database/migrations/main_test.go",
+              "internal/database/migrations/migrations.go",
+              "internal/database/migrations/v20.go",
+              "internal/database/migrations/v20_test.go",
+              "internal/database/migrations/v21.go",
+              "internal/database/migrations/v21_test.go",
+              "internal/database/milestone.go",
+              "internal/database/mirror.go",
+              "internal/database/mirror_test.go",
+              "internal/database/mocks_gen.go",
+              "internal/database/mocks_test.go",
+              "internal/database/models.go",
+              "internal/database/notices.go",
+              "internal/database/notices_test.go",
+              "internal/database/org.go",
+              "internal/database/org_team.go",
+              "internal/database/organizations.go",
+              "internal/database/organizations_test.go",
+              "internal/database/permissions.go",
+              "internal/database/permissions_test.go",
+              "internal/database/public_keys.go",
+              "internal/database/public_keys_test.go",
+              "internal/database/pull.go",
+              "internal/database/release.go",
+              "internal/database/repo.go",
+              "internal/database/repo_branch.go",
+              "internal/database/repo_collaboration.go",
+              "internal/database/repo_editor.go",
+              "internal/database/repo_editor_test.go",
+              "internal/database/repo_tag.go",
+              "internal/database/repo_test.go",
+              "internal/database/repositories.go",
+              "internal/database/repositories_test.go",
+              "internal/database/schemadoc/main.go",
+              "internal/database/ssh_key.go",
+              "internal/database/ssh_key_test.go",
+              "internal/database/two_factor.go",
+              "internal/database/two_factors.go",
+              "internal/database/two_factors_test.go",
+              "internal/database/update.go",
+              "internal/database/users.go",
+              "internal/database/users_test.go",
+              "internal/database/webhook.go",
+              "internal/database/webhook_dingtalk.go",
+              "internal/database/webhook_discord.go",
+              "internal/database/webhook_slack.go",
+              "internal/database/wiki.go",
+              "internal/database/wiki_test.go",
+              "internal/dbtest/dbtest.go",
+              "internal/dbx/dsn.go",
+              "internal/dbx/dsn_test.go",
+              "internal/dbx/logger.go",
+              "internal/dbx/string.go",
+              "internal/dbx/string_test.go",
+              "internal/email/email.go",
+              "internal/email/email_test.go",
+              "internal/email/message.go",
+              "internal/errx/errx.go",
+              "internal/errx/errx_test.go",
+              "internal/form/admin.go",
+              "internal/form/auth.go",
+              "internal/form/form.go",
+              "internal/form/org.go",
+              "internal/form/repo.go",
+              "internal/form/user.go",
+              "internal/gitx/diff.go",
+              "internal/gitx/diff_test.go",
+              "internal/gitx/error.go",
+              "internal/gitx/error_test.go",
+              "internal/gitx/mocks.go",
+              "internal/gitx/module.go",
+              "internal/gitx/pull_request.go",
+              "internal/gitx/pull_request_test.go",
+              "internal/gitx/submodule.go",
+              "internal/gitx/submodule_test.go",
+              "internal/gitx/tag.go",
+              "internal/gitx/tag_test.go",
+              "internal/httplib/httplib.go",
+              "internal/iox/iox.go",
+              "internal/lazyregexp/lazyre.go",
+              "internal/lfsx/oid.go",
+              "internal/lfsx/oid_test.go",
+              "internal/lfsx/storage.go",
+              "internal/lfsx/storage_test.go",
+              "internal/markup/markdown.go",
+              "internal/markup/markdown_test.go",
+              "internal/markup/markup.go",
+              "internal/markup/markup_test.go",
+              "internal/markup/orgmode.go",
+              "internal/markup/sanitizer.go",
+              "internal/markup/sanitizer_test.go",
+              "internal/mocks/locale.go",
+              "internal/netx/netx.go",
+              "internal/netx/netx_test.go",
+              "internal/osx/error.go",
+              "internal/osx/error_test.go",
+              "internal/osx/osx.go",
+              "internal/osx/osx_test.go",
+              "internal/pathx/pathx.go",
+              "internal/pathx/pathx_test.go",
+              "internal/process/manager.go",
+              "internal/ptrx/ptrx.go",
+              "internal/ptrx/ptrx_test.go",
+              "internal/repox/repox.go",
+              "internal/repox/repox_test.go",
+              "internal/route/admin/admin.go",
+              "internal/route/admin/auths.go",
+              "internal/route/admin/notice.go",
+              "internal/route/admin/orgs.go",
+              "internal/route/admin/repos.go",
+              "internal/route/admin/users.go",
+              "internal/route/api/v1/adapters.go",
+              "internal/route/api/v1/admin_org.go",
+              "internal/route/api/v1/admin_org_repo.go",
+              "internal/route/api/v1/admin_org_team.go",
+              "internal/route/api/v1/admin_repo.go",
+              "internal/route/api/v1/admin_user.go",
+              "internal/route/api/v1/api.go",
+              "internal/route/api/v1/markdown.go",
+              "internal/route/api/v1/org.go",
+              "internal/route/api/v1/org_team.go",
+              "internal/route/api/v1/repo_blob.go",
+              "internal/route/api/v1/repo_branch.go",
+              "internal/route/api/v1/repo_collaborators.go",
+              "internal/route/api/v1/repo_commits.go",
+              "internal/route/api/v1/repo_contents.go",
+              "internal/route/api/v1/repo_file.go",
+              "internal/route/api/v1/repo_hook.go",
+              "internal/route/api/v1/repo_issue.go",
+              "internal/route/api/v1/repo_issue_comment.go",
+              "internal/route/api/v1/repo_issue_label.go",
+              "internal/route/api/v1/repo_key.go",
+              "internal/route/api/v1/repo_label.go",
+              "internal/route/api/v1/repo_milestone.go",
+              "internal/route/api/v1/repo_repo.go",
+              "internal/route/api/v1/repo_tag.go",
+              "internal/route/api/v1/repo_tree.go",
+              "internal/route/api/v1/tag.go",
+              "internal/route/api/v1/types/commit.go",
+              "internal/route/api/v1/types/hook.go",
+              "internal/route/api/v1/types/issue.go",
+              "internal/route/api/v1/types/org.go",
+              "internal/route/api/v1/types/pull_request.go",
+              "internal/route/api/v1/types/repo.go",
+              "internal/route/api/v1/types/user.go",
+              "internal/route/api/v1/types/webhook.go",
+              "internal/route/api/v1/user.go",
+              "internal/route/api/v1/user_access_tokens.go",
+              "internal/route/api/v1/user_email.go",
+              "internal/route/api/v1/user_follower.go",
+              "internal/route/api/v1/user_key.go",
+              "internal/route/dev/template.go",
+              "internal/route/home.go",
+              "internal/route/lfs/basic.go",
+              "internal/route/lfs/basic_test.go",
+              "internal/route/lfs/batch.go",
+              "internal/route/lfs/batch_test.go",
+              "internal/route/lfs/main_test.go",
+              "internal/route/lfs/mocks_test.go",
+              "internal/route/lfs/route.go",
+              "internal/route/lfs/route_test.go",
+              "internal/route/lfs/store.go",
+              "internal/route/org/members.go",
+              "internal/route/org/org.go",
+              "internal/route/org/setting.go",
+              "internal/route/org/teams.go",
+              "internal/route/repo/branch.go",
+              "internal/route/repo/commit.go",
+              "internal/route/repo/download.go",
+              "internal/route/repo/editor.go",
+              "internal/route/repo/http.go",
+              "internal/route/repo/http_test.go",
+              "internal/route/repo/issue.go",
+              "internal/route/repo/pull.go",
+              "internal/route/repo/release.go",
+              "internal/route/repo/repo.go",
+              "internal/route/repo/setting.go",
+              "internal/route/repo/store.go",
+              "internal/route/repo/tasks.go",
+              "internal/route/repo/view.go",
+              "internal/route/repo/webhook.go",
+              "internal/route/repo/webhook_test.go",
+              "internal/route/repo/wiki.go",
+              "internal/route/user/home.go",
+              "internal/route/user/profile.go",
+              "internal/route/user/setting.go",
+              "internal/semverx/semverx.go",
+              "internal/semverx/semverx_test.go",
+              "internal/ssh/ssh.go",
+              "internal/strx/strx.go",
+              "internal/strx/strx_test.go",
+              "internal/sync/exclusive_pool.go",
+              "internal/sync/status_table.go",
+              "internal/sync/unique_queue.go",
+              "internal/template/highlight/highlight.go",
+              "internal/template/template.go",
+              "internal/testx/exec.go",
+              "internal/testx/exec_test.go",
+              "internal/testx/golden.go",
+              "internal/testx/golden_test.go",
+              "internal/testx/noop_logger.go",
+              "internal/testx/testx.go",
+              "internal/testx/testx_test.go",
+              "internal/tool/file.go",
+              "internal/tool/tool.go",
+              "internal/urlx/urlx.go",
+              "internal/urlx/urlx_test.go",
+              "internal/userx/userx.go",
+              "internal/userx/userx_test.go",
+              "public/embed.go",
+              "public/web_dev.go",
+              "public/web_prod.go",
+              "templates/embed.go"
+            ],
+            "id": "gogs",
+            "label": "Provide a self-hosted Git service",
+            "state": "observed-only"
+          },
+          {
+            "children": [],
+            "delta_operations": [],
+            "description": "Builds, delivers and documents the Codebase; nothing in it runs as part of a Capability",
+            "files": [
+              ".agents/skills/ghsa/SKILL.md",
+              ".agents/skills/react-doctor/SKILL.md",
+              ".github/CONTRIBUTING.md",
+              ".github/ISSUE_TEMPLATE/bug_report.yml",
+              ".github/ISSUE_TEMPLATE/config.yml",
+              ".github/ISSUE_TEMPLATE/dev_release_minor_version.md",
+              ".github/ISSUE_TEMPLATE/dev_release_patch_version.md",
+              ".github/ISSUE_TEMPLATE/documentation.yml",
+              ".github/ISSUE_TEMPLATE/feature_request.yml",
+              ".github/pull_request_template.md",
+              ".github/workflows/codeql.yml",
+              ".github/workflows/docker.yml",
+              ".github/workflows/go.yml",
+              ".github/workflows/lock.yml",
+              ".github/workflows/release.yml",
+              ".github/workflows/shell.yml",
+              ".github/workflows/web.yml",
+              ".golangci.yml",
+              ".moon/tasks/all.yml",
+              ".moon/workspace.yml",
+              "AGENTS.md",
+              "CHANGELOG.md",
+              "CLAUDE.md",
+              "Dockerfile",
+              "README.md",
+              "SECURITY.md",
+              "docker-next/README.md",
+              "docker-next/start.sh",
+              "docker/README.md",
+              "docker/runtime/backup-init.sh",
+              "docker/runtime/backup-job.sh",
+              "docker/runtime/backup-rotator.sh",
+              "docker/start.sh",
+              "docs/README.md",
+              "docs/api-reference/openapi.json",
+              "docs/dev/database_schema.md",
+              "docs/dev/import_locale.md",
+              "docs/dev/local_development.md",
+              "docs/docs.json",
+              "docs/scripts/ads.js",
+              "internal/database/testdata/backup/Access.golden.json",
+              "internal/database/testdata/backup/AccessToken.golden.json",
+              "internal/database/testdata/backup/Action.golden.json",
+              "internal/database/testdata/backup/EmailAddress.golden.json",
+              "internal/database/testdata/backup/Follow.golden.json",
+              "internal/database/testdata/backup/LFSObject.golden.json",
+              "internal/database/testdata/backup/LoginSource.golden.json",
+              "internal/database/testdata/backup/Notice.golden.json",
+              "mockgen.go",
+              "mockgen.yaml",
+              "moon.yml",
+              "package.json",
+              "pnpm-lock.yaml",
+              "pnpm-workspace.yaml",
+              "public/plugins/codemirror-5.17.0/.travis.yml",
+              "scripts/windows/install-as-service.bat",
+              "skills-lock.json",
+              "trivy.yaml"
+            ],
+            "id": "operations",
+            "label": "Operations",
+            "state": "observed-only"
+          },
+          {
+            "children": [
+              {
+                "children": [],
+                "delta_operations": [],
+                "description": "",
+                "files": [
+                  "docs/scripts/title.js",
+                  "public/js/gogs.js",
+                  "public/js/libs/jquery.are-you-sure.js",
+                  "public/plugins/codemirror-5.17.0/addon/mode/loadmode.js",
+                  "public/plugins/codemirror-5.17.0/addon/mode/multiplex.js",
+                  "public/plugins/codemirror-5.17.0/addon/mode/multiplex_test.js",
+                  "public/plugins/codemirror-5.17.0/addon/mode/overlay.js",
+                  "public/plugins/codemirror-5.17.0/addon/mode/simple.js",
+                  "public/plugins/codemirror-5.17.0/mode/apl/apl.js",
+                  "public/plugins/codemirror-5.17.0/mode/asciiarmor/asciiarmor.js",
+                  "public/plugins/codemirror-5.17.0/mode/asn.1/asn.1.js",
+                  "public/plugins/codemirror-5.17.0/mode/asterisk/asterisk.js",
+                  "public/plugins/codemirror-5.17.0/mode/brainfuck/brainfuck.js",
+                  "public/plugins/codemirror-5.17.0/mode/clike/clike.js",
+                  "public/plugins/codemirror-5.17.0/mode/clike/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/clojure/clojure.js",
+                  "public/plugins/codemirror-5.17.0/mode/cmake/cmake.js",
+                  "public/plugins/codemirror-5.17.0/mode/cobol/cobol.js",
+                  "public/plugins/codemirror-5.17.0/mode/coffeescript/coffeescript.js",
+                  "public/plugins/codemirror-5.17.0/mode/commonlisp/commonlisp.js",
+                  "public/plugins/codemirror-5.17.0/mode/crystal/crystal.js",
+                  "public/plugins/codemirror-5.17.0/mode/css/css.js",
+                  "public/plugins/codemirror-5.17.0/mode/css/gss_test.js",
+                  "public/plugins/codemirror-5.17.0/mode/css/less_test.js",
+                  "public/plugins/codemirror-5.17.0/mode/css/scss_test.js",
+                  "public/plugins/codemirror-5.17.0/mode/css/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/cypher/cypher.js",
+                  "public/plugins/codemirror-5.17.0/mode/d/d.js",
+                  "public/plugins/codemirror-5.17.0/mode/dart/dart.js",
+                  "public/plugins/codemirror-5.17.0/mode/diff/diff.js",
+                  "public/plugins/codemirror-5.17.0/mode/django/django.js",
+                  "public/plugins/codemirror-5.17.0/mode/dockerfile/dockerfile.js",
+                  "public/plugins/codemirror-5.17.0/mode/dtd/dtd.js",
+                  "public/plugins/codemirror-5.17.0/mode/dylan/dylan.js",
+                  "public/plugins/codemirror-5.17.0/mode/dylan/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/ebnf/ebnf.js",
+                  "public/plugins/codemirror-5.17.0/mode/ecl/ecl.js",
+                  "public/plugins/codemirror-5.17.0/mode/eiffel/eiffel.js",
+                  "public/plugins/codemirror-5.17.0/mode/elm/elm.js",
+                  "public/plugins/codemirror-5.17.0/mode/erlang/erlang.js",
+                  "public/plugins/codemirror-5.17.0/mode/factor/factor.js",
+                  "public/plugins/codemirror-5.17.0/mode/fcl/fcl.js",
+                  "public/plugins/codemirror-5.17.0/mode/forth/forth.js",
+                  "public/plugins/codemirror-5.17.0/mode/fortran/fortran.js",
+                  "public/plugins/codemirror-5.17.0/mode/gas/gas.js",
+                  "public/plugins/codemirror-5.17.0/mode/gfm/gfm.js",
+                  "public/plugins/codemirror-5.17.0/mode/gfm/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/gherkin/gherkin.js",
+                  "public/plugins/codemirror-5.17.0/mode/go/go.js",
+                  "public/plugins/codemirror-5.17.0/mode/groovy/groovy.js",
+                  "public/plugins/codemirror-5.17.0/mode/haml/haml.js",
+                  "public/plugins/codemirror-5.17.0/mode/haml/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/handlebars/handlebars.js",
+                  "public/plugins/codemirror-5.17.0/mode/haskell-literate/haskell-literate.js",
+                  "public/plugins/codemirror-5.17.0/mode/haskell/haskell.js",
+                  "public/plugins/codemirror-5.17.0/mode/haxe/haxe.js",
+                  "public/plugins/codemirror-5.17.0/mode/htmlembedded/htmlembedded.js",
+                  "public/plugins/codemirror-5.17.0/mode/htmlmixed/htmlmixed.js",
+                  "public/plugins/codemirror-5.17.0/mode/http/http.js",
+                  "public/plugins/codemirror-5.17.0/mode/idl/idl.js",
+                  "public/plugins/codemirror-5.17.0/mode/jade/jade.js",
+                  "public/plugins/codemirror-5.17.0/mode/javascript/javascript.js",
+                  "public/plugins/codemirror-5.17.0/mode/javascript/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/jinja2/jinja2.js",
+                  "public/plugins/codemirror-5.17.0/mode/jsx/jsx.js",
+                  "public/plugins/codemirror-5.17.0/mode/jsx/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/julia/julia.js",
+                  "public/plugins/codemirror-5.17.0/mode/livescript/livescript.js",
+                  "public/plugins/codemirror-5.17.0/mode/lua/lua.js",
+                  "public/plugins/codemirror-5.17.0/mode/markdown/markdown.js",
+                  "public/plugins/codemirror-5.17.0/mode/markdown/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/mathematica/mathematica.js",
+                  "public/plugins/codemirror-5.17.0/mode/mbox/mbox.js",
+                  "public/plugins/codemirror-5.17.0/mode/meta.js",
+                  "public/plugins/codemirror-5.17.0/mode/mirc/mirc.js",
+                  "public/plugins/codemirror-5.17.0/mode/mllike/mllike.js",
+                  "public/plugins/codemirror-5.17.0/mode/modelica/modelica.js",
+                  "public/plugins/codemirror-5.17.0/mode/mscgen/mscgen.js",
+                  "public/plugins/codemirror-5.17.0/mode/mscgen/mscgen_test.js",
+                  "public/plugins/codemirror-5.17.0/mode/mscgen/msgenny_test.js",
+                  "public/plugins/codemirror-5.17.0/mode/mscgen/xu_test.js",
+                  "public/plugins/codemirror-5.17.0/mode/mumps/mumps.js",
+                  "public/plugins/codemirror-5.17.0/mode/nginx/nginx.js",
+                  "public/plugins/codemirror-5.17.0/mode/nsis/nsis.js",
+                  "public/plugins/codemirror-5.17.0/mode/ntriples/ntriples.js",
+                  "public/plugins/codemirror-5.17.0/mode/octave/octave.js",
+                  "public/plugins/codemirror-5.17.0/mode/oz/oz.js",
+                  "public/plugins/codemirror-5.17.0/mode/pascal/pascal.js",
+                  "public/plugins/codemirror-5.17.0/mode/pegjs/pegjs.js",
+                  "public/plugins/codemirror-5.17.0/mode/perl/perl.js",
+                  "public/plugins/codemirror-5.17.0/mode/php/php.js",
+                  "public/plugins/codemirror-5.17.0/mode/php/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/pig/pig.js",
+                  "public/plugins/codemirror-5.17.0/mode/powershell/powershell.js",
+                  "public/plugins/codemirror-5.17.0/mode/powershell/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/properties/properties.js",
+                  "public/plugins/codemirror-5.17.0/mode/protobuf/protobuf.js",
+                  "public/plugins/codemirror-5.17.0/mode/puppet/puppet.js",
+                  "public/plugins/codemirror-5.17.0/mode/python/python.js",
+                  "public/plugins/codemirror-5.17.0/mode/python/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/q/q.js",
+                  "public/plugins/codemirror-5.17.0/mode/r/r.js",
+                  "public/plugins/codemirror-5.17.0/mode/rpm/rpm.js",
+                  "public/plugins/codemirror-5.17.0/mode/rst/rst.js",
+                  "public/plugins/codemirror-5.17.0/mode/ruby/ruby.js",
+                  "public/plugins/codemirror-5.17.0/mode/ruby/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/rust/rust.js",
+                  "public/plugins/codemirror-5.17.0/mode/rust/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/sas/sas.js",
+                  "public/plugins/codemirror-5.17.0/mode/sass/sass.js",
+                  "public/plugins/codemirror-5.17.0/mode/scheme/scheme.js",
+                  "public/plugins/codemirror-5.17.0/mode/shell/shell.js",
+                  "public/plugins/codemirror-5.17.0/mode/shell/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/sieve/sieve.js",
+                  "public/plugins/codemirror-5.17.0/mode/slim/slim.js",
+                  "public/plugins/codemirror-5.17.0/mode/slim/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/smalltalk/smalltalk.js",
+                  "public/plugins/codemirror-5.17.0/mode/smarty/smarty.js",
+                  "public/plugins/codemirror-5.17.0/mode/solr/solr.js",
+                  "public/plugins/codemirror-5.17.0/mode/soy/soy.js",
+                  "public/plugins/codemirror-5.17.0/mode/sparql/sparql.js",
+                  "public/plugins/codemirror-5.17.0/mode/spreadsheet/spreadsheet.js",
+                  "public/plugins/codemirror-5.17.0/mode/sql/sql.js",
+                  "public/plugins/codemirror-5.17.0/mode/stex/stex.js",
+                  "public/plugins/codemirror-5.17.0/mode/stex/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/stylus/stylus.js",
+                  "public/plugins/codemirror-5.17.0/mode/swift/swift.js",
+                  "public/plugins/codemirror-5.17.0/mode/tcl/tcl.js",
+                  "public/plugins/codemirror-5.17.0/mode/textile/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/textile/textile.js",
+                  "public/plugins/codemirror-5.17.0/mode/tiddlywiki/tiddlywiki.js",
+                  "public/plugins/codemirror-5.17.0/mode/tiki/tiki.js",
+                  "public/plugins/codemirror-5.17.0/mode/toml/toml.js",
+                  "public/plugins/codemirror-5.17.0/mode/tornado/tornado.js",
+                  "public/plugins/codemirror-5.17.0/mode/troff/troff.js",
+                  "public/plugins/codemirror-5.17.0/mode/ttcn-cfg/ttcn-cfg.js",
+                  "public/plugins/codemirror-5.17.0/mode/ttcn/ttcn.js",
+                  "public/plugins/codemirror-5.17.0/mode/turtle/turtle.js",
+                  "public/plugins/codemirror-5.17.0/mode/twig/twig.js",
+                  "public/plugins/codemirror-5.17.0/mode/vb/vb.js",
+                  "public/plugins/codemirror-5.17.0/mode/vbscript/vbscript.js",
+                  "public/plugins/codemirror-5.17.0/mode/velocity/velocity.js",
+                  "public/plugins/codemirror-5.17.0/mode/verilog/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/verilog/verilog.js",
+                  "public/plugins/codemirror-5.17.0/mode/vhdl/vhdl.js",
+                  "public/plugins/codemirror-5.17.0/mode/vue/vue.js",
+                  "public/plugins/codemirror-5.17.0/mode/webidl/webidl.js",
+                  "public/plugins/codemirror-5.17.0/mode/xml/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/xml/xml.js",
+                  "public/plugins/codemirror-5.17.0/mode/xquery/test.js",
+                  "public/plugins/codemirror-5.17.0/mode/xquery/xquery.js",
+                  "public/plugins/codemirror-5.17.0/mode/yacas/yacas.js",
+                  "public/plugins/codemirror-5.17.0/mode/yaml-frontmatter/yaml-frontmatter.js",
+                  "public/plugins/codemirror-5.17.0/mode/yaml/yaml.js",
+                  "public/plugins/codemirror-5.17.0/mode/z80/z80.js",
+                  "public/plugins/highlight-9.18.0/highlight.pack.js",
+                  "public/plugins/jquery.datetimepicker-2.4.5/jquery.datetimepicker.js",
+                  "public/plugins/pdfjs-5.2.133/web/debugger.mjs",
+                  "public/plugins/pdfjs-5.2.133/web/locale/locale.json",
+                  "public/plugins/pdfjs-5.2.133/web/viewer.mjs",
+                  "public/plugins/pdfjs-5.2.133/web/wasm/openjpeg_nowasm_fallback.js"
+                ],
+                "id": "platform.root",
+                "label": "platform.root",
+                "state": "observed-only"
+              },
+              {
+                "children": [],
+                "delta_operations": [],
+                "description": "",
+                "files": [
+                  "web/.prettierrc.js",
+                  "web/DESIGN.md",
+                  "web/eslint.config.js",
+                  "web/moon.yml",
+                  "web/package.json",
+                  "web/scripts/extract-locales.mjs",
+                  "web/src/App.tsx",
+                  "web/src/assets/fonts/LICENSE.txt",
+                  "web/src/components/DiffFileTree.tsx",
+                  "web/src/components/DiffSearch.tsx",
+                  "web/src/components/DiffToolbar.tsx",
+                  "web/src/components/FileHeaderMenu.tsx",
+                  "web/src/components/Footer.tsx",
+                  "web/src/components/Navbar.tsx",
+                  "web/src/components/PasswordInput.tsx",
+                  "web/src/components/RepoHeader.tsx",
+                  "web/src/components/ResizableSidebar.tsx",
+                  "web/src/components/SettingsMenu.tsx",
+                  "web/src/components/ThemeProvider.tsx",
+                  "web/src/components/UserInfoProvider.tsx",
+                  "web/src/components/ui/button-variants.ts",
+                  "web/src/components/ui/button.tsx",
+                  "web/src/components/ui/card.tsx",
+                  "web/src/components/ui/checkbox.tsx",
+                  "web/src/components/ui/input.tsx",
+                  "web/src/components/ui/label.tsx",
+                  "web/src/components/ui/popover.tsx",
+                  "web/src/components/ui/select.tsx",
+                  "web/src/components/ui/sheet.tsx",
+                  "web/src/components/ui/toggle-group.tsx",
+                  "web/src/components/ui/toggle-variants.ts",
+                  "web/src/components/ui/tooltip.tsx",
+                  "web/src/lib/context.ts",
+                  "web/src/lib/i18n.ts",
+                  "web/src/lib/loader-error.ts",
+                  "web/src/lib/page-title.ts",
+                  "web/src/lib/queries/repo.ts",
+                  "web/src/lib/relative-time.ts",
+                  "web/src/lib/theme-context.ts",
+                  "web/src/lib/url.ts",
+                  "web/src/lib/use-user-info.ts",
+                  "web/src/lib/user-info-context.ts",
+                  "web/src/lib/user-info.ts",
+                  "web/src/lib/utils.ts",
+                  "web/src/locales/bg-BG.json",
+                  "web/src/locales/cs-CZ.json",
+                  "web/src/locales/de-DE.json",
+                  "web/src/locales/en-GB.json",
+                  "web/src/locales/en-US.json",
+                  "web/src/locales/es-ES.json",
+                  "web/src/locales/fa-IR.json",
+                  "web/src/locales/fi-FI.json",
+                  "web/src/locales/fr-FR.json",
+                  "web/src/locales/gl-ES.json",
+                  "web/src/locales/hu-HU.json",
+                  "web/src/locales/id-ID.json",
+                  "web/src/locales/it-IT.json",
+                  "web/src/locales/ja-JP.json",
+                  "web/src/locales/ko-KR.json",
+                  "web/src/locales/lv-LV.json",
+                  "web/src/locales/mn-MN.json",
+                  "web/src/locales/nl-NL.json",
+                  "web/src/locales/pl-PL.json",
+                  "web/src/locales/pt-BR.json",
+                  "web/src/locales/pt-PT.json",
+                  "web/src/locales/ro-RO.json",
+                  "web/src/locales/ru-RU.json",
+                  "web/src/locales/sk-SK.json",
+                  "web/src/locales/sr-SP.json",
+                  "web/src/locales/sv-SE.json",
+                  "web/src/locales/tr-TR.json",
+                  "web/src/locales/uk-UA.json",
+                  "web/src/locales/vi-VN.json",
+                  "web/src/locales/zh-CN.json",
+                  "web/src/locales/zh-HK.json",
+                  "web/src/locales/zh-TW.json",
+                  "web/src/main.tsx",
+                  "web/src/router.tsx",
+                  "web/src/routes/repo.tsx",
+                  "web/src/routes/user.tsx",
+                  "web/src/vite-env.d.ts",
+                  "web/tsconfig.app.json",
+                  "web/tsconfig.json",
+                  "web/tsconfig.node.json",
+                  "web/vite.config.ts"
+                ],
+                "id": "platform.web",
+                "label": "platform.web",
+                "state": "observed-only"
+              },
+              {
+                "children": [],
+                "delta_operations": [],
+                "description": "",
+                "files": [
+                  "web/src/pages/Landing.tsx",
+                  "web/src/pages/NotFound.tsx",
+                  "web/src/pages/ServerError.tsx"
+                ],
+                "id": "platform.web.root",
+                "label": "platform.web.root",
+                "state": "observed-only"
+              }
+            ],
+            "delta_operations": [],
+            "description": "Shared Modules many Capabilities use",
+            "files": [],
+            "id": "platform",
+            "label": "Platform",
+            "state": "observed-only"
+          }
+        ],
+        "edges": [
+          {
+            "from": "ep:main:cmd/gogs/main.go",
+            "to": "gogs",
+            "weight": 1
+          },
+          {
+            "from": "ep:main:internal/database/schemadoc/main.go",
+            "to": "gogs",
+            "weight": 1
+          },
+          {
+            "from": "ep:ui:web/src/pages/Landing.tsx:Landing",
+            "to": "platform.web.root",
+            "weight": 1
+          },
+          {
+            "from": "ep:ui:web/src/pages/NotFound.tsx:NotFound",
+            "to": "platform.web.root",
+            "weight": 1
+          },
+          {
+            "from": "ep:ui:web/src/pages/ServerError.tsx:ServerError",
+            "to": "platform.web.root",
+            "weight": 1
+          },
+          {
+            "from": "ep:ui:web/src/pages/repo/Commit.search.ts:validateRepoCommitSearch",
+            "to": "gogs.repo.ui",
+            "weight": 1
+          },
+          {
+            "from": "ep:ui:web/src/pages/repo/Commit.tsx:resolveTheme",
+            "to": "gogs.repo.ui",
+            "weight": 1
+          },
+          {
+            "from": "ep:ui:web/src/pages/user/Activate.tsx:Activate",
+            "to": "gogs.user.ui",
+            "weight": 1
+          },
+          {
+            "from": "ep:ui:web/src/pages/user/MFA.tsx:MFA",
+            "to": "gogs.user.ui",
+            "weight": 1
+          },
+          {
+            "from": "ep:ui:web/src/pages/user/ResetPassword.tsx:FormActions",
+            "to": "gogs.user.ui",
+            "weight": 1
+          },
+          {
+            "from": "ep:ui:web/src/pages/user/SignIn.tsx:SignIn",
+            "to": "gogs.user.ui",
+            "weight": 1
+          },
+          {
+            "from": "ep:ui:web/src/pages/user/SignUp.tsx:SignUp",
+            "to": "gogs.user.ui",
+            "weight": 1
+          },
+          {
+            "from": "gogs.repo.ui",
+            "label": "calls",
+            "to": "platform.root",
+            "weight": 1
+          },
+          {
+            "from": "gogs.user.ui",
+            "label": "calls",
+            "to": "platform.root",
+            "weight": 1
+          },
+          {
+            "from": "gogs.user.ui",
+            "label": "calls",
+            "to": "platform.web",
+            "weight": 1
+          },
+          {
+            "from": "platform.root",
+            "label": "calls",
+            "to": "platform.web",
+            "weight": 1
+          },
+          {
+            "from": "platform.web",
+            "label": "calls",
+            "to": "platform.root",
+            "weight": 1
+          }
+        ],
+        "entry_points": [
+          {
+            "file": "cmd/gogs/main.go",
+            "id": "ep:main:cmd/gogs/main.go",
+            "kind": "main",
+            "label": "flow:ep:main:cmd/gogs/main.go",
+            "state": "observed",
+            "symbol": "main"
+          },
+          {
+            "file": "internal/database/schemadoc/main.go",
+            "id": "ep:main:internal/database/schemadoc/main.go",
+            "kind": "main",
+            "label": "flow:ep:main:internal/database/schemadoc/main.go",
+            "state": "observed",
+            "symbol": "main"
+          },
+          {
+            "file": "web/src/pages/Landing.tsx",
+            "id": "ep:ui:web/src/pages/Landing.tsx:Landing",
+            "kind": "ui",
+            "label": "flow:ep:ui:web/src/pages/Landing.tsx:Landing",
+            "state": "observed",
+            "symbol": "Landing"
+          },
+          {
+            "file": "web/src/pages/NotFound.tsx",
+            "id": "ep:ui:web/src/pages/NotFound.tsx:NotFound",
+            "kind": "ui",
+            "label": "flow:ep:ui:web/src/pages/NotFound.tsx:NotFound",
+            "state": "observed",
+            "symbol": "NotFound"
+          },
+          {
+            "file": "web/src/pages/ServerError.tsx",
+            "id": "ep:ui:web/src/pages/ServerError.tsx:ServerError",
+            "kind": "ui",
+            "label": "flow:ep:ui:web/src/pages/ServerError.tsx:ServerError",
+            "state": "observed",
+            "symbol": "ServerError"
+          },
+          {
+            "file": "web/src/pages/repo/Commit.search.ts",
+            "id": "ep:ui:web/src/pages/repo/Commit.search.ts:validateRepoCommitSearch",
+            "kind": "ui",
+            "label": "flow:ep:ui:web/src/pages/repo/Commit.search.ts:validateRepoCommitSearch",
+            "state": "observed",
+            "symbol": "validateRepoCommitSearch"
+          },
+          {
+            "file": "web/src/pages/repo/Commit.tsx",
+            "id": "ep:ui:web/src/pages/repo/Commit.tsx:resolveTheme",
+            "kind": "ui",
+            "label": "flow:ep:ui:web/src/pages/repo/Commit.tsx:resolveTheme",
+            "state": "observed",
+            "symbol": "resolveTheme"
+          },
+          {
+            "file": "web/src/pages/user/Activate.tsx",
+            "id": "ep:ui:web/src/pages/user/Activate.tsx:Activate",
+            "kind": "ui",
+            "label": "flow:ep:ui:web/src/pages/user/Activate.tsx:Activate",
+            "state": "observed",
+            "symbol": "Activate"
+          },
+          {
+            "file": "web/src/pages/user/MFA.tsx",
+            "id": "ep:ui:web/src/pages/user/MFA.tsx:MFA",
+            "kind": "ui",
+            "label": "flow:ep:ui:web/src/pages/user/MFA.tsx:MFA",
+            "state": "observed",
+            "symbol": "MFA"
+          },
+          {
+            "file": "web/src/pages/user/ResetPassword.tsx",
+            "id": "ep:ui:web/src/pages/user/ResetPassword.tsx:FormActions",
+            "kind": "ui",
+            "label": "flow:ep:ui:web/src/pages/user/ResetPassword.tsx:FormActions",
+            "state": "observed",
+            "symbol": "FormActions"
+          },
+          {
+            "file": "web/src/pages/user/SignIn.tsx",
+            "id": "ep:ui:web/src/pages/user/SignIn.tsx:SignIn",
+            "kind": "ui",
+            "label": "flow:ep:ui:web/src/pages/user/SignIn.tsx:SignIn",
+            "state": "observed",
+            "symbol": "SignIn"
+          },
+          {
+            "file": "web/src/pages/user/SignUp.tsx",
+            "id": "ep:ui:web/src/pages/user/SignUp.tsx:SignUp",
+            "kind": "ui",
+            "label": "flow:ep:ui:web/src/pages/user/SignUp.tsx:SignUp",
+            "state": "observed",
+            "symbol": "SignUp"
+          }
+        ],
+        "flow_names": {
+          "ep:main:cmd/gogs/main.go": "flow:ep:main:cmd/gogs/main.go",
+          "ep:main:internal/database/schemadoc/main.go": "flow:ep:main:internal/database/schemadoc/main.go",
+          "ep:ui:web/src/pages/Landing.tsx:Landing": "flow:ep:ui:web/src/pages/Landing.tsx:Landing",
+          "ep:ui:web/src/pages/NotFound.tsx:NotFound": "flow:ep:ui:web/src/pages/NotFound.tsx:NotFound",
+          "ep:ui:web/src/pages/ServerError.tsx:ServerError": "flow:ep:ui:web/src/pages/ServerError.tsx:ServerError",
+          "ep:ui:web/src/pages/repo/Commit.search.ts:validateRepoCommitSearch": "flow:ep:ui:web/src/pages/repo/Commit.search.ts:validateRepoCommitSearch",
+          "ep:ui:web/src/pages/repo/Commit.tsx:resolveTheme": "flow:ep:ui:web/src/pages/repo/Commit.tsx:resolveTheme",
+          "ep:ui:web/src/pages/user/Activate.tsx:Activate": "flow:ep:ui:web/src/pages/user/Activate.tsx:Activate",
+          "ep:ui:web/src/pages/user/MFA.tsx:MFA": "flow:ep:ui:web/src/pages/user/MFA.tsx:MFA",
+          "ep:ui:web/src/pages/user/ResetPassword.tsx:FormActions": "flow:ep:ui:web/src/pages/user/ResetPassword.tsx:FormActions",
+          "ep:ui:web/src/pages/user/SignIn.tsx:SignIn": "flow:ep:ui:web/src/pages/user/SignIn.tsx:SignIn",
+          "ep:ui:web/src/pages/user/SignUp.tsx:SignUp": "flow:ep:ui:web/src/pages/user/SignUp.tsx:SignUp"
+        },
+        "user": {
+          "label": "User"
+        },
+        "version": 1
+      },
+      "schema_version": 3
+    },
+    "component_facts": [
+      {
+        "component": "gogs",
+        "file_count": 337,
+        "languages": {
+          "go": 2527
+        },
+        "symbol_count": 2527,
+        "talks_to": []
+      },
+      {
+        "component": "gogs.repo.ui",
+        "file_count": 2,
+        "languages": {
+          "tsx": 11,
+          "typescript": 1
+        },
+        "symbol_count": 12,
+        "talks_to": [
+          "platform.root"
+        ]
+      },
+      {
+        "component": "gogs.user.ui",
+        "file_count": 5,
+        "languages": {
+          "tsx": 18
+        },
+        "symbol_count": 18,
+        "talks_to": [
+          "platform.root",
+          "platform.web"
+        ]
+      },
+      {
+        "component": "operations",
+        "file_count": 58,
+        "languages": {
+          "javascript": 3
+        },
+        "symbol_count": 3,
+        "talks_to": []
+      },
+      {
+        "component": "platform",
+        "file_count": 0,
+        "interface": [
+          {
+            "calling_modules": 1,
+            "calls": 13,
+            "file": "public/plugins/pdfjs-5.2.133/web/viewer.mjs",
+            "line": 12623,
+            "name": "focus"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 5,
+            "file": "web/src/routes/repo.tsx",
+            "line": 36,
+            "name": "stringify"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 2,
+            "file": "public/plugins/pdfjs-5.2.133/web/viewer.mjs",
+            "line": 11555,
+            "name": "has"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 1,
+            "file": "public/plugins/highlight-9.18.0/highlight.pack.js",
+            "line": 2,
+            "name": "exec"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 1,
+            "file": "public/plugins/pdfjs-5.2.133/web/viewer.mjs",
+            "line": 2431,
+            "name": "hasAttribute"
+          }
+        ],
+        "languages": {},
+        "symbol_count": 0,
+        "talks_to": []
+      },
+      {
+        "component": "platform.root",
+        "file_count": 161,
+        "interface": [
+          {
+            "calling_modules": 2,
+            "calls": 15,
+            "file": "public/plugins/pdfjs-5.2.133/web/viewer.mjs",
+            "line": 12623,
+            "name": "focus"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 4,
+            "file": "public/plugins/pdfjs-5.2.133/web/viewer.mjs",
+            "line": 459,
+            "name": "setWidth"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 2,
+            "file": "public/plugins/jquery.datetimepicker-2.4.5/jquery.datetimepicker.js",
+            "line": 1195,
+            "name": "now"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 2,
+            "file": "public/plugins/pdfjs-5.2.133/web/viewer.mjs",
+            "line": 11555,
+            "name": "has"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 1,
+            "file": "public/js/gogs.js",
+            "line": 689,
+            "name": "endsWith"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 1,
+            "file": "public/plugins/codemirror-5.17.0/mode/jade/jade.js",
+            "line": 327,
+            "name": "filter"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 1,
+            "file": "public/plugins/codemirror-5.17.0/mode/rst/rst.js",
+            "line": 76,
+            "name": "format"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 1,
+            "file": "public/plugins/highlight-9.18.0/highlight.pack.js",
+            "line": 2,
+            "name": "exec"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 1,
+            "file": "public/plugins/pdfjs-5.2.133/web/viewer.mjs",
+            "line": 2027,
+            "name": "test"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 1,
+            "file": "public/plugins/pdfjs-5.2.133/web/viewer.mjs",
+            "line": 2345,
+            "name": "trim"
+          }
+        ],
+        "languages": {
+          "javascript": 2473
+        },
+        "symbol_count": 2473,
+        "talks_to": [
+          "platform.web"
+        ]
+      },
+      {
+        "component": "platform.web",
+        "file_count": 85,
+        "interface": [
+          {
+            "calling_modules": 2,
+            "calls": 22,
+            "file": "web/src/routes/repo.tsx",
+            "line": 36,
+            "name": "stringify"
+          },
+          {
+            "calling_modules": 1,
+            "calls": 8,
+            "file": "web/src/routes/repo.tsx",
+            "line": 29,
+            "name": "parse"
+          }
+        ],
+        "languages": {
+          "javascript": 1,
+          "tsx": 108,
+          "typescript": 20
+        },
+        "symbol_count": 129,
+        "talks_to": [
+          "platform.root"
+        ]
+      },
+      {
+        "component": "platform.web.root",
+        "file_count": 3,
+        "languages": {
+          "tsx": 4
+        },
+        "symbol_count": 4,
+        "talks_to": []
+      }
+    ],
+    "flows": [
+      {
+        "chains": [],
+        "entry_point": "ep:main:cmd/gogs/main.go",
+        "name": "flow:ep:main:cmd/gogs/main.go"
+      },
+      {
+        "chains": [
+          [
+            {
+              "component": "gogs",
+              "file": "internal/database/schemadoc/main.go",
+              "line": 27,
+              "name": "main"
+            },
+            {
+              "component": "gogs",
+              "file": "internal/lazyregexp/lazyre.go",
+              "line": 105,
+              "name": "New"
+            },
+            {
+              "component": "gogs",
+              "file": "internal/lazyregexp/lazyre.go",
+              "line": 24,
+              "name": "Regexp"
+            }
+          ],
+          [
+            {
+              "component": "gogs",
+              "file": "internal/database/schemadoc/main.go",
+              "line": 27,
+              "name": "main"
+            },
+            {
+              "component": "gogs",
+              "file": "internal/database/schemadoc/main.go",
+              "line": 131,
+              "name": "generate"
+            }
+          ]
+        ],
+        "entry_point": "ep:main:internal/database/schemadoc/main.go",
+        "name": "flow:ep:main:internal/database/schemadoc/main.go"
+      },
+      {
+        "chains": [
+          [
+            {
+              "component": "platform.web.root",
+              "file": "web/src/pages/Landing.tsx",
+              "line": 7,
+              "name": "Landing"
+            },
+            {
+              "component": "platform.web.root",
+              "file": "web/src/pages/Landing.tsx",
+              "line": 56,
+              "name": "CmdLink"
+            }
+          ]
+        ],
+        "entry_point": "ep:ui:web/src/pages/Landing.tsx:Landing",
+        "name": "flow:ep:ui:web/src/pages/Landing.tsx:Landing"
+      },
+      {
+        "chains": [],
+        "entry_point": "ep:ui:web/src/pages/NotFound.tsx:NotFound",
+        "name": "flow:ep:ui:web/src/pages/NotFound.tsx:NotFound"
+      },
+      {
+        "chains": [],
+        "entry_point": "ep:ui:web/src/pages/ServerError.tsx:ServerError",
+        "name": "flow:ep:ui:web/src/pages/ServerError.tsx:ServerError"
+      },
+      {
+        "chains": [],
+        "entry_point": "ep:ui:web/src/pages/repo/Commit.search.ts:validateRepoCommitSearch",
+        "name": "flow:ep:ui:web/src/pages/repo/Commit.search.ts:validateRepoCommitSearch"
+      },
+      {
+        "chains": [],
+        "entry_point": "ep:ui:web/src/pages/repo/Commit.tsx:resolveTheme",
+        "name": "flow:ep:ui:web/src/pages/repo/Commit.tsx:resolveTheme"
+      },
+      {
+        "chains": [
+          [
+            {
+              "component": "gogs.user.ui",
+              "file": "web/src/pages/user/Activate.tsx",
+              "line": 28,
+              "name": "Activate"
+            },
+            {
+              "component": "platform.web",
+              "file": "web/src/routes/repo.tsx",
+              "line": 36,
+              "name": "stringify"
+            }
+          ],
+          [
+            {
+              "component": "gogs.user.ui",
+              "file": "web/src/pages/user/Activate.tsx",
+              "line": 28,
+              "name": "Activate"
+            },
+            {
+              "component": "gogs.user.ui",
+              "file": "web/src/pages/user/Activate.tsx",
+              "line": 99,
+              "name": "renderContent"
+            }
+          ]
+        ],
+        "entry_point": "ep:ui:web/src/pages/user/Activate.tsx:Activate",
+        "name": "flow:ep:ui:web/src/pages/user/Activate.tsx:Activate"
+      },
+      {
+        "chains": [
+          [
+            {
+              "component": "gogs.user.ui",
+              "file": "web/src/pages/user/MFA.tsx",
+              "line": 21,
+              "name": "MFA"
+            },
+            {
+              "component": "gogs.user.ui",
+              "file": "web/src/pages/user/MFA.tsx",
+              "line": 52,
+              "name": "switchMode"
+            }
+          ]
+        ],
+        "entry_point": "ep:ui:web/src/pages/user/MFA.tsx:MFA",
+        "name": "flow:ep:ui:web/src/pages/user/MFA.tsx:MFA"
+      },
+      {
+        "chains": [],
+        "entry_point": "ep:ui:web/src/pages/user/ResetPassword.tsx:FormActions",
+        "name": "flow:ep:ui:web/src/pages/user/ResetPassword.tsx:FormActions"
+      },
+      {
+        "chains": [],
+        "entry_point": "ep:ui:web/src/pages/user/SignIn.tsx:SignIn",
+        "name": "flow:ep:ui:web/src/pages/user/SignIn.tsx:SignIn"
+      },
+      {
+        "chains": [
+          [
+            {
+              "component": "gogs.user.ui",
+              "file": "web/src/pages/user/SignUp.tsx",
+              "line": 33,
+              "name": "SignUp"
+            },
+            {
+              "component": "gogs.user.ui",
+              "file": "web/src/pages/user/SignUp.tsx",
+              "line": 131,
+              "name": "renderContent"
+            }
+          ]
+        ],
+        "entry_point": "ep:ui:web/src/pages/user/SignUp.tsx:SignUp",
+        "name": "flow:ep:ui:web/src/pages/user/SignUp.tsx:SignUp"
+      }
+    ],
+    "stats": {
+      "calls": 10047,
+      "classes": 620,
+      "files": 651,
+      "functions": 5166
+    }
+  }
+}
