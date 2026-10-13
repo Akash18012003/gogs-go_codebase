@@ -1,0 +1,4266 @@
+{
+  "adapters": [],
+  "dependencies": [
+    {
+      "direction": "calls",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/repo/Commit.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/repo/Commit.tsx"
+        }
+      ],
+      "provenance": [],
+      "source_module": "gogs.repo.ui",
+      "target_module": "platform.root"
+    },
+    {
+      "direction": "calls",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/MFA.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/ResetPassword.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/SignIn.tsx"
+        }
+      ],
+      "provenance": [],
+      "source_module": "gogs.user.ui",
+      "target_module": "platform.root"
+    },
+    {
+      "direction": "calls",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/Activate.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/MFA.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/ResetPassword.tsx"
+        }
+      ],
+      "provenance": [],
+      "source_module": "gogs.user.ui",
+      "target_module": "platform.web"
+    },
+    {
+      "direction": "calls",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/pdfjs-5.2.133/web/debugger.mjs"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/pdfjs-5.2.133/web/viewer.mjs"
+        }
+      ],
+      "provenance": [],
+      "source_module": "platform.root",
+      "target_module": "platform.web"
+    },
+    {
+      "direction": "calls",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/scripts/extract-locales.mjs"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/scripts/extract-locales.mjs"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/DiffFileTree.tsx"
+        }
+      ],
+      "provenance": [],
+      "source_module": "platform.web",
+      "target_module": "platform.root"
+    }
+  ],
+  "flows": [
+    {
+      "edges": [
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "cmd/gogs/main.go",
+              "symbol": "main"
+            }
+          ],
+          "from": "ep:main:cmd/gogs/main.go",
+          "provenance": [],
+          "to": "gogs"
+        }
+      ],
+      "entry_point": "ep:main:cmd/gogs/main.go",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/main.go",
+          "symbol": "main"
+        }
+      ],
+      "id": "flow:ep:main:cmd/gogs/main.go",
+      "provenance": []
+    },
+    {
+      "edges": [
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "internal/database/schemadoc/main.go",
+              "symbol": "main"
+            }
+          ],
+          "from": "ep:main:internal/database/schemadoc/main.go",
+          "provenance": [],
+          "to": "gogs"
+        }
+      ],
+      "entry_point": "ep:main:internal/database/schemadoc/main.go",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/schemadoc/main.go",
+          "symbol": "main"
+        }
+      ],
+      "id": "flow:ep:main:internal/database/schemadoc/main.go",
+      "provenance": []
+    },
+    {
+      "edges": [
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/Landing.tsx",
+              "symbol": "Landing"
+            }
+          ],
+          "from": "ep:ui:web/src/pages/Landing.tsx:Landing",
+          "provenance": [],
+          "to": "platform.web.root"
+        }
+      ],
+      "entry_point": "ep:ui:web/src/pages/Landing.tsx:Landing",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/Landing.tsx",
+          "symbol": "Landing"
+        }
+      ],
+      "id": "flow:ep:ui:web/src/pages/Landing.tsx:Landing",
+      "provenance": []
+    },
+    {
+      "edges": [
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/NotFound.tsx",
+              "symbol": "NotFound"
+            }
+          ],
+          "from": "ep:ui:web/src/pages/NotFound.tsx:NotFound",
+          "provenance": [],
+          "to": "platform.web.root"
+        }
+      ],
+      "entry_point": "ep:ui:web/src/pages/NotFound.tsx:NotFound",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/NotFound.tsx",
+          "symbol": "NotFound"
+        }
+      ],
+      "id": "flow:ep:ui:web/src/pages/NotFound.tsx:NotFound",
+      "provenance": []
+    },
+    {
+      "edges": [
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/ServerError.tsx",
+              "symbol": "ServerError"
+            }
+          ],
+          "from": "ep:ui:web/src/pages/ServerError.tsx:ServerError",
+          "provenance": [],
+          "to": "platform.web.root"
+        }
+      ],
+      "entry_point": "ep:ui:web/src/pages/ServerError.tsx:ServerError",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/ServerError.tsx",
+          "symbol": "ServerError"
+        }
+      ],
+      "id": "flow:ep:ui:web/src/pages/ServerError.tsx:ServerError",
+      "provenance": []
+    },
+    {
+      "edges": [
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/repo/Commit.search.ts",
+              "symbol": "validateRepoCommitSearch"
+            }
+          ],
+          "from": "ep:ui:web/src/pages/repo/Commit.search.ts:validateRepoCommitSearch",
+          "provenance": [],
+          "to": "gogs.repo.ui"
+        }
+      ],
+      "entry_point": "ep:ui:web/src/pages/repo/Commit.search.ts:validateRepoCommitSearch",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/repo/Commit.search.ts",
+          "symbol": "validateRepoCommitSearch"
+        }
+      ],
+      "id": "flow:ep:ui:web/src/pages/repo/Commit.search.ts:validateRepoCommitSearch",
+      "provenance": []
+    },
+    {
+      "edges": [
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/repo/Commit.tsx",
+              "symbol": "resolveTheme"
+            }
+          ],
+          "from": "ep:ui:web/src/pages/repo/Commit.tsx:resolveTheme",
+          "provenance": [],
+          "to": "gogs.repo.ui"
+        },
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/repo/Commit.tsx"
+            }
+          ],
+          "from": "gogs.repo.ui",
+          "provenance": [],
+          "to": "platform.root"
+        },
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "public/plugins/pdfjs-5.2.133/web/viewer.mjs"
+            }
+          ],
+          "from": "platform.root",
+          "provenance": [],
+          "to": "platform.web"
+        }
+      ],
+      "entry_point": "ep:ui:web/src/pages/repo/Commit.tsx:resolveTheme",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/repo/Commit.tsx",
+          "symbol": "resolveTheme"
+        }
+      ],
+      "id": "flow:ep:ui:web/src/pages/repo/Commit.tsx:resolveTheme",
+      "provenance": []
+    },
+    {
+      "edges": [
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/Activate.tsx",
+              "symbol": "Activate"
+            }
+          ],
+          "from": "ep:ui:web/src/pages/user/Activate.tsx:Activate",
+          "provenance": [],
+          "to": "gogs.user.ui"
+        },
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/Activate.tsx"
+            }
+          ],
+          "from": "gogs.user.ui",
+          "provenance": [],
+          "to": "platform.web"
+        },
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/routes/repo.tsx"
+            }
+          ],
+          "from": "platform.web",
+          "provenance": [],
+          "to": "platform.root"
+        }
+      ],
+      "entry_point": "ep:ui:web/src/pages/user/Activate.tsx:Activate",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/Activate.tsx",
+          "symbol": "Activate"
+        }
+      ],
+      "id": "flow:ep:ui:web/src/pages/user/Activate.tsx:Activate",
+      "provenance": []
+    },
+    {
+      "edges": [
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/MFA.tsx",
+              "symbol": "MFA"
+            }
+          ],
+          "from": "ep:ui:web/src/pages/user/MFA.tsx:MFA",
+          "provenance": [],
+          "to": "gogs.user.ui"
+        },
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/MFA.tsx"
+            }
+          ],
+          "from": "gogs.user.ui",
+          "provenance": [],
+          "to": "platform.root"
+        },
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/MFA.tsx"
+            }
+          ],
+          "from": "gogs.user.ui",
+          "provenance": [],
+          "to": "platform.web"
+        }
+      ],
+      "entry_point": "ep:ui:web/src/pages/user/MFA.tsx:MFA",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/MFA.tsx",
+          "symbol": "MFA"
+        }
+      ],
+      "id": "flow:ep:ui:web/src/pages/user/MFA.tsx:MFA",
+      "provenance": []
+    },
+    {
+      "edges": [
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/ResetPassword.tsx",
+              "symbol": "FormActions"
+            }
+          ],
+          "from": "ep:ui:web/src/pages/user/ResetPassword.tsx:FormActions",
+          "provenance": [],
+          "to": "gogs.user.ui"
+        },
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/ResetPassword.tsx"
+            }
+          ],
+          "from": "gogs.user.ui",
+          "provenance": [],
+          "to": "platform.root"
+        },
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/ResetPassword.tsx"
+            }
+          ],
+          "from": "gogs.user.ui",
+          "provenance": [],
+          "to": "platform.web"
+        }
+      ],
+      "entry_point": "ep:ui:web/src/pages/user/ResetPassword.tsx:FormActions",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/ResetPassword.tsx",
+          "symbol": "FormActions"
+        }
+      ],
+      "id": "flow:ep:ui:web/src/pages/user/ResetPassword.tsx:FormActions",
+      "provenance": []
+    },
+    {
+      "edges": [
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/SignIn.tsx",
+              "symbol": "SignIn"
+            }
+          ],
+          "from": "ep:ui:web/src/pages/user/SignIn.tsx:SignIn",
+          "provenance": [],
+          "to": "gogs.user.ui"
+        },
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/SignIn.tsx"
+            }
+          ],
+          "from": "gogs.user.ui",
+          "provenance": [],
+          "to": "platform.root"
+        },
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/SignIn.tsx"
+            }
+          ],
+          "from": "gogs.user.ui",
+          "provenance": [],
+          "to": "platform.web"
+        }
+      ],
+      "entry_point": "ep:ui:web/src/pages/user/SignIn.tsx:SignIn",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/SignIn.tsx",
+          "symbol": "SignIn"
+        }
+      ],
+      "id": "flow:ep:ui:web/src/pages/user/SignIn.tsx:SignIn",
+      "provenance": []
+    },
+    {
+      "edges": [
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/SignUp.tsx",
+              "symbol": "SignUp"
+            }
+          ],
+          "from": "ep:ui:web/src/pages/user/SignUp.tsx:SignUp",
+          "provenance": [],
+          "to": "gogs.user.ui"
+        },
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/SignUp.tsx"
+            }
+          ],
+          "from": "gogs.user.ui",
+          "provenance": [],
+          "to": "platform.root"
+        },
+        {
+          "direction": "forward",
+          "evidence": [
+            {
+              "confidence": 1.0,
+              "provenance_kind": "graph",
+              "source_file": "web/src/pages/user/SignUp.tsx"
+            }
+          ],
+          "from": "gogs.user.ui",
+          "provenance": [],
+          "to": "platform.web"
+        }
+      ],
+      "entry_point": "ep:ui:web/src/pages/user/SignUp.tsx:SignUp",
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/SignUp.tsx",
+          "symbol": "SignUp"
+        }
+      ],
+      "id": "flow:ep:ui:web/src/pages/user/SignUp.tsx:SignUp",
+      "provenance": []
+    }
+  ],
+  "graph_backend": "go-sqlite",
+  "graph_backend_version": "0.6.1",
+  "implementations": [],
+  "interfaces": [
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/repo/Commit.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/repo/Commit.tsx",
+          "symbol": "resolveTheme"
+        }
+      ],
+      "id": "interface:gogs.repo.ui:Commit",
+      "module_id": "gogs.repo.ui",
+      "provenance": [],
+      "purpose": "Entry points: /repo/Commit (page)"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/repo/Commit.search.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/repo/Commit.search.ts",
+          "symbol": "validateRepoCommitSearch"
+        }
+      ],
+      "id": "interface:gogs.repo.ui:Commit.search",
+      "module_id": "gogs.repo.ui",
+      "provenance": [],
+      "purpose": "Entry points: /repo/Commit.search (page)"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/Activate.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/Activate.tsx",
+          "symbol": "Activate"
+        }
+      ],
+      "id": "interface:gogs.user.ui:Activate",
+      "module_id": "gogs.user.ui",
+      "provenance": [],
+      "purpose": "Entry points: /user/Activate (page)"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/MFA.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/MFA.tsx",
+          "symbol": "MFA"
+        }
+      ],
+      "id": "interface:gogs.user.ui:MFA",
+      "module_id": "gogs.user.ui",
+      "provenance": [],
+      "purpose": "Entry points: /user/MFA (page)"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/ResetPassword.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/ResetPassword.tsx",
+          "symbol": "FormActions"
+        }
+      ],
+      "id": "interface:gogs.user.ui:ResetPassword",
+      "module_id": "gogs.user.ui",
+      "provenance": [],
+      "purpose": "Entry points: /user/ResetPassword (page)"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/SignIn.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/SignIn.tsx",
+          "symbol": "SignIn"
+        }
+      ],
+      "id": "interface:gogs.user.ui:SignIn",
+      "module_id": "gogs.user.ui",
+      "provenance": [],
+      "purpose": "Entry points: /user/SignIn (page)"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/SignUp.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/SignUp.tsx",
+          "symbol": "SignUp"
+        }
+      ],
+      "id": "interface:gogs.user.ui:SignUp",
+      "module_id": "gogs.user.ui",
+      "provenance": [],
+      "purpose": "Entry points: /user/SignUp (page)"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/main.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/main.go",
+          "symbol": "main"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/schemadoc/main.go",
+          "symbol": "main"
+        }
+      ],
+      "id": "interface:gogs:main",
+      "module_id": "gogs",
+      "provenance": [],
+      "purpose": "Entry points: main \u00b7 cmd/gogs/main.go; main \u00b7 internal/database/schemadoc/main.go"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/Landing.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/Landing.tsx",
+          "symbol": "Landing"
+        }
+      ],
+      "id": "interface:platform.web.root:Landing",
+      "module_id": "platform.web.root",
+      "provenance": [],
+      "purpose": "Entry points: /Landing (page)"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/NotFound.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/NotFound.tsx",
+          "symbol": "NotFound"
+        }
+      ],
+      "id": "interface:platform.web.root:NotFound",
+      "module_id": "platform.web.root",
+      "provenance": [],
+      "purpose": "Entry points: /NotFound (page)"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/ServerError.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/ServerError.tsx",
+          "symbol": "ServerError"
+        }
+      ],
+      "id": "interface:platform.web.root:ServerError",
+      "module_id": "platform.web.root",
+      "provenance": [],
+      "purpose": "Entry points: /ServerError (page)"
+    }
+  ],
+  "kind": "observed",
+  "modules": [
+    {
+      "adapters": [],
+      "allowed_dependency_directions": [],
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/admin.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/backup.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/cmd.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/hook.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/import.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/internal/web/cache.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/internal/web/repo_context.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/internal/web/web.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/internal/web/web_repo.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/internal/web/webapi.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/internal/web/webapi_repo.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/internal/web/webapi_user.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/internal/web/webapp_dev.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/internal/web/webapp_prod.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/internal/web/webapp_render_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/main.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/restore.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "cmd/gogs/serv.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/app.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/embed.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/embed_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_bg-BG.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_cs-CZ.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_de-DE.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_en-GB.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_en-US.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_es-ES.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_fa-IR.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_fi-FI.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_fr-FR.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_gl-ES.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_hu-HU.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_id-ID.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_it-IT.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_ja-JP.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_ko-KR.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_lv-LV.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_mn-MN.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_nl-NL.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_pl-PL.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_pt-BR.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_pt-PT.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_ro-RO.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_ru-RU.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_sk-SK.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_sr-SP.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_sv-SE.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_tr-TR.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_uk-UA.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_vi-VN.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_zh-CN.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_zh-HK.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "conf/locale/locale_zh-TW.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/app/api.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/app/api_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/app/metrics.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/auth/auth.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/auth/github/config.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/auth/github/provider.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/auth/ldap/README.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/auth/ldap/config.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/auth/ldap/provider.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/auth/pam/config.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/auth/pam/pam.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/auth/pam/pam_stub.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/auth/pam/provider.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/auth/smtp/config.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/auth/smtp/provider.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/authx/basic.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/authx/basic_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/avatar/avatar.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/avatar/avatar_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/computed.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/computed_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/conf.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/conf_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/log.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/log_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/mocks.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/static.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/static_minwinsvc.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/static_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/testdata/TestInit.golden.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/testdata/custom.ini"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/utils.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/conf/utils_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/context/api.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/context/api_org.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/context/auth.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/context/auth_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/context/context.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/context/go_get.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/context/notice.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/context/org.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/context/repo.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/context/store.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/context/user.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/cron/cron.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/cryptox/aes.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/cryptox/aes_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/cryptox/md5.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/cryptox/md5_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/cryptox/sha.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/cryptox/sha_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/access_tokens.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/access_tokens_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/actions.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/actions_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/attachment.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/backup.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/backup_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/comment.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/database.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/error.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/issue.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/issue_label.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/issue_mail.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/lfs.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/lfs_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/login_source_files.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/login_source_files_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/login_sources.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/login_sources_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/main_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/migrations/main_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/migrations/migrations.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/migrations/v20.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/migrations/v20_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/migrations/v21.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/migrations/v21_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/milestone.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/mirror.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/mirror_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/mocks_gen.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/mocks_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/models.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/notices.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/notices_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/org.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/org_team.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/organizations.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/organizations_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/permissions.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/permissions_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/public_keys.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/public_keys_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/pull.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/release.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/repo.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/repo_branch.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/repo_collaboration.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/repo_editor.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/repo_editor_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/repo_tag.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/repo_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/repositories.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/repositories_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/schemadoc/main.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/ssh_key.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/ssh_key_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/two_factor.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/two_factors.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/two_factors_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/update.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/users.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/users_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/webhook.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/webhook_dingtalk.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/webhook_discord.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/webhook_slack.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/wiki.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/wiki_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/dbtest/dbtest.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/dbx/dsn.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/dbx/dsn_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/dbx/logger.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/dbx/string.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/dbx/string_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/email/email.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/email/email_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/email/message.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/errx/errx.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/errx/errx_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/form/admin.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/form/auth.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/form/form.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/form/org.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/form/repo.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/form/user.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/gitx/diff.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/gitx/diff_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/gitx/error.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/gitx/error_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/gitx/mocks.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/gitx/module.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/gitx/pull_request.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/gitx/pull_request_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/gitx/submodule.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/gitx/submodule_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/gitx/tag.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/gitx/tag_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/httplib/httplib.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/iox/iox.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/lazyregexp/lazyre.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/lfsx/oid.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/lfsx/oid_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/lfsx/storage.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/lfsx/storage_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/markup/markdown.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/markup/markdown_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/markup/markup.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/markup/markup_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/markup/orgmode.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/markup/sanitizer.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/markup/sanitizer_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/mocks/locale.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/netx/netx.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/netx/netx_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/osx/error.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/osx/error_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/osx/osx.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/osx/osx_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/pathx/pathx.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/pathx/pathx_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/process/manager.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/ptrx/ptrx.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/ptrx/ptrx_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/repox/repox.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/repox/repox_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/admin/admin.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/admin/auths.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/admin/notice.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/admin/orgs.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/admin/repos.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/admin/users.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/adapters.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/admin_org.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/admin_org_repo.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/admin_org_team.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/admin_repo.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/admin_user.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/api.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/markdown.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/org.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/org_team.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_blob.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_branch.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_collaborators.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_commits.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_contents.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_file.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_hook.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_issue.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_issue_comment.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_issue_label.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_key.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_label.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_milestone.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_repo.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_tag.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/repo_tree.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/tag.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/types/commit.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/types/hook.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/types/issue.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/types/org.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/types/pull_request.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/types/repo.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/types/user.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/types/webhook.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/user.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/user_access_tokens.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/user_email.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/user_follower.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/api/v1/user_key.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/dev/template.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/home.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/lfs/basic.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/lfs/basic_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/lfs/batch.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/lfs/batch_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/lfs/main_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/lfs/mocks_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/lfs/route.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/lfs/route_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/lfs/store.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/org/members.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/org/org.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/org/setting.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/org/teams.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/branch.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/commit.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/download.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/editor.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/http.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/http_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/issue.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/pull.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/release.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/repo.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/setting.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/store.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/tasks.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/view.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/webhook.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/webhook_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/repo/wiki.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/user/home.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/user/profile.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/route/user/setting.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/semverx/semverx.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/semverx/semverx_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/ssh/ssh.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/strx/strx.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/strx/strx_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/sync/exclusive_pool.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/sync/status_table.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/sync/unique_queue.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/template/highlight/highlight.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/template/template.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/testx/exec.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/testx/exec_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/testx/golden.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/testx/golden_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/testx/noop_logger.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/testx/testx.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/testx/testx_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/tool/file.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/tool/tool.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/urlx/urlx.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/urlx/urlx_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/userx/userx.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/userx/userx_test.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/embed.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/web_dev.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/web_prod.go"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "templates/embed.go"
+        }
+      ],
+      "hidden_implementation": [],
+      "id": "gogs",
+      "owned_data": [],
+      "provenance": [],
+      "public_interfaces": [
+        "interface:gogs:main"
+      ],
+      "purpose": "Provide a self-hosted Git service",
+      "responsibility": "",
+      "seams": []
+    },
+    {
+      "adapters": [],
+      "allowed_dependency_directions": [],
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/repo/Commit.search.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/repo/Commit.tsx"
+        }
+      ],
+      "hidden_implementation": [],
+      "id": "gogs.repo.ui",
+      "owned_data": [],
+      "parent": "gogs",
+      "provenance": [],
+      "public_interfaces": [
+        "interface:gogs.repo.ui:Commit.search",
+        "interface:gogs.repo.ui:Commit"
+      ],
+      "purpose": "Present repository commits and changes",
+      "responsibility": "",
+      "seams": []
+    },
+    {
+      "adapters": [],
+      "allowed_dependency_directions": [],
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/Activate.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/MFA.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/ResetPassword.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/SignIn.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/user/SignUp.tsx"
+        }
+      ],
+      "hidden_implementation": [],
+      "id": "gogs.user.ui",
+      "owned_data": [],
+      "parent": "gogs",
+      "provenance": [],
+      "public_interfaces": [
+        "interface:gogs.user.ui:Activate",
+        "interface:gogs.user.ui:MFA",
+        "interface:gogs.user.ui:ResetPassword",
+        "interface:gogs.user.ui:SignIn",
+        "interface:gogs.user.ui:SignUp"
+      ],
+      "purpose": "Sign in, register and recover accounts",
+      "responsibility": "",
+      "seams": []
+    },
+    {
+      "adapters": [],
+      "allowed_dependency_directions": [],
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/CONTRIBUTING.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/ISSUE_TEMPLATE/bug_report.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/ISSUE_TEMPLATE/config.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/ISSUE_TEMPLATE/dev_release_minor_version.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/ISSUE_TEMPLATE/dev_release_patch_version.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/ISSUE_TEMPLATE/documentation.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/ISSUE_TEMPLATE/feature_request.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/pull_request_template.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/workflows/codeql.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/workflows/docker.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/workflows/go.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/workflows/lock.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/workflows/release.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/workflows/shell.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".github/workflows/web.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".golangci.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "AGENTS.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "CHANGELOG.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "CLAUDE.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "Dockerfile"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "README.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "SECURITY.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docker-next/README.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docker-next/start.sh"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docker/README.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docker/runtime/backup-init.sh"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docker/runtime/backup-job.sh"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docker/runtime/backup-rotator.sh"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docker/start.sh"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docs/README.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docs/api-reference/openapi.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docs/dev/database_schema.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docs/dev/import_locale.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docs/dev/local_development.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docs/docs.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docs/scripts/ads.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/testdata/backup/Access.golden.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/testdata/backup/AccessToken.golden.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/testdata/backup/Action.golden.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/testdata/backup/EmailAddress.golden.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/testdata/backup/Follow.golden.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/testdata/backup/LFSObject.golden.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/testdata/backup/LoginSource.golden.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "internal/database/testdata/backup/Notice.golden.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "mockgen.yaml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "moon.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "package.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "pnpm-lock.yaml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "pnpm-workspace.yaml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/.travis.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "scripts/windows/install-as-service.bat"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "skills-lock.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "trivy.yaml"
+        }
+      ],
+      "hidden_implementation": [],
+      "id": "operations",
+      "owned_data": [],
+      "provenance": [],
+      "public_interfaces": [],
+      "purpose": "Operations",
+      "responsibility": "Builds, delivers and documents the Codebase; nothing in it runs as part of a Capability",
+      "seams": []
+    },
+    {
+      "adapters": [],
+      "allowed_dependency_directions": [],
+      "evidence": [],
+      "hidden_implementation": [],
+      "id": "platform",
+      "owned_data": [],
+      "provenance": [],
+      "public_interfaces": [],
+      "purpose": "Platform",
+      "responsibility": "Shared Modules many Capabilities use",
+      "seams": []
+    },
+    {
+      "adapters": [],
+      "allowed_dependency_directions": [],
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "docs/scripts/title.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/js/gogs.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/js/libs/jquery.are-you-sure.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/addon/mode/loadmode.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/addon/mode/multiplex.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/addon/mode/multiplex_test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/addon/mode/overlay.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/addon/mode/simple.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/apl/apl.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/asciiarmor/asciiarmor.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/asn.1/asn.1.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/asterisk/asterisk.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/brainfuck/brainfuck.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/clike/clike.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/clike/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/clojure/clojure.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/cmake/cmake.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/cobol/cobol.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/coffeescript/coffeescript.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/commonlisp/commonlisp.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/crystal/crystal.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/css/css.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/css/gss_test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/css/less_test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/css/scss_test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/css/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/cypher/cypher.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/d/d.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/dart/dart.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/diff/diff.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/django/django.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/dockerfile/dockerfile.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/dtd/dtd.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/dylan/dylan.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/dylan/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/ebnf/ebnf.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/ecl/ecl.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/eiffel/eiffel.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/elm/elm.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/erlang/erlang.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/factor/factor.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/fcl/fcl.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/forth/forth.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/fortran/fortran.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/gas/gas.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/gfm/gfm.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/gfm/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/gherkin/gherkin.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/go/go.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/groovy/groovy.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/haml/haml.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/haml/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/handlebars/handlebars.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/haskell-literate/haskell-literate.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/haskell/haskell.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/haxe/haxe.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/htmlembedded/htmlembedded.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/htmlmixed/htmlmixed.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/http/http.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/idl/idl.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/jade/jade.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/javascript/javascript.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/javascript/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/jinja2/jinja2.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/jsx/jsx.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/jsx/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/julia/julia.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/livescript/livescript.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/lua/lua.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/markdown/markdown.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/markdown/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/mathematica/mathematica.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/mbox/mbox.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/meta.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/mirc/mirc.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/mllike/mllike.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/modelica/modelica.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/mscgen/mscgen.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/mscgen/mscgen_test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/mscgen/msgenny_test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/mscgen/xu_test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/mumps/mumps.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/nginx/nginx.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/nsis/nsis.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/ntriples/ntriples.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/octave/octave.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/oz/oz.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/pascal/pascal.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/pegjs/pegjs.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/perl/perl.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/php/php.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/php/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/pig/pig.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/powershell/powershell.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/powershell/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/properties/properties.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/protobuf/protobuf.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/puppet/puppet.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/python/python.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/python/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/q/q.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/r/r.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/rpm/rpm.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/rst/rst.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/ruby/ruby.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/ruby/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/rust/rust.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/rust/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/sas/sas.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/sass/sass.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/scheme/scheme.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/shell/shell.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/shell/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/sieve/sieve.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/slim/slim.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/slim/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/smalltalk/smalltalk.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/smarty/smarty.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/solr/solr.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/soy/soy.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/sparql/sparql.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/spreadsheet/spreadsheet.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/sql/sql.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/stex/stex.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/stex/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/stylus/stylus.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/swift/swift.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/tcl/tcl.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/textile/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/textile/textile.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/tiddlywiki/tiddlywiki.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/tiki/tiki.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/toml/toml.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/tornado/tornado.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/troff/troff.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/ttcn-cfg/ttcn-cfg.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/ttcn/ttcn.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/turtle/turtle.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/twig/twig.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/vb/vb.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/vbscript/vbscript.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/velocity/velocity.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/verilog/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/verilog/verilog.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/vhdl/vhdl.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/vue/vue.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/webidl/webidl.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/xml/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/xml/xml.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/xquery/test.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/xquery/xquery.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/yacas/yacas.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/yaml-frontmatter/yaml-frontmatter.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/yaml/yaml.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/codemirror-5.17.0/mode/z80/z80.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/highlight-9.18.0/highlight.pack.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/jquery.datetimepicker-2.4.5/jquery.datetimepicker.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/pdfjs-5.2.133/web/debugger.mjs"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/pdfjs-5.2.133/web/locale/locale.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/pdfjs-5.2.133/web/viewer.mjs"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "public/plugins/pdfjs-5.2.133/web/wasm/openjpeg_nowasm_fallback.js"
+        }
+      ],
+      "hidden_implementation": [],
+      "id": "platform.root",
+      "owned_data": [],
+      "parent": "platform",
+      "provenance": [],
+      "public_interfaces": [],
+      "purpose": "",
+      "responsibility": "",
+      "seams": []
+    },
+    {
+      "adapters": [],
+      "allowed_dependency_directions": [],
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/.prettierrc.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/DESIGN.md"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/eslint.config.js"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/moon.yml"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/package.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/scripts/extract-locales.mjs"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/App.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/assets/fonts/LICENSE.txt"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/DiffFileTree.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/DiffSearch.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/DiffToolbar.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/FileHeaderMenu.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/Footer.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/Navbar.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/PasswordInput.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/RepoHeader.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ResizableSidebar.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/SettingsMenu.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ThemeProvider.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/UserInfoProvider.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ui/button-variants.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ui/button.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ui/card.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ui/checkbox.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ui/input.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ui/label.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ui/popover.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ui/select.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ui/sheet.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ui/toggle-group.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ui/toggle-variants.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/components/ui/tooltip.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/lib/context.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/lib/i18n.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/lib/loader-error.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/lib/page-title.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/lib/queries/repo.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/lib/relative-time.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/lib/theme-context.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/lib/url.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/lib/use-user-info.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/lib/user-info-context.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/lib/user-info.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/lib/utils.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/bg-BG.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/cs-CZ.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/de-DE.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/en-GB.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/en-US.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/es-ES.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/fa-IR.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/fi-FI.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/fr-FR.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/gl-ES.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/hu-HU.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/id-ID.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/it-IT.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/ja-JP.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/ko-KR.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/lv-LV.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/mn-MN.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/nl-NL.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/pl-PL.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/pt-BR.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/pt-PT.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/ro-RO.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/ru-RU.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/sk-SK.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/sr-SP.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/sv-SE.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/tr-TR.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/uk-UA.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/vi-VN.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/zh-CN.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/zh-HK.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/locales/zh-TW.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/main.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/router.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/routes/repo.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/routes/user.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/vite-env.d.ts"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/tsconfig.app.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/tsconfig.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/tsconfig.node.json"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/vite.config.ts"
+        }
+      ],
+      "hidden_implementation": [],
+      "id": "platform.web",
+      "owned_data": [],
+      "parent": "platform",
+      "provenance": [],
+      "public_interfaces": [],
+      "purpose": "",
+      "responsibility": "",
+      "seams": []
+    },
+    {
+      "adapters": [],
+      "allowed_dependency_directions": [],
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/Landing.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/NotFound.tsx"
+        },
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "web/src/pages/ServerError.tsx"
+        }
+      ],
+      "hidden_implementation": [],
+      "id": "platform.web.root",
+      "owned_data": [],
+      "parent": "platform",
+      "provenance": [],
+      "public_interfaces": [
+        "interface:platform.web.root:Landing",
+        "interface:platform.web.root:NotFound",
+        "interface:platform.web.root:ServerError"
+      ],
+      "purpose": "",
+      "responsibility": "",
+      "seams": []
+    }
+  ],
+  "schema_version": 2,
+  "sealed_generation": "4db25d17dc619c52dee39fdebd571b06f30434232d0c8147f2596b0f35c16fc2",
+  "seams": [],
+  "source_commit": "13e642ba3eb6d958fa08219df2960f84d156cd35",
+  "unresolved_claims": [
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".agents/skills/ghsa/SKILL.md"
+        }
+      ],
+      "id": "claim:file:.agents/skills/ghsa/SKILL.md",
+      "reason": "no Module Map entry claims this file",
+      "subject": "file:.agents/skills/ghsa/SKILL.md"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".agents/skills/react-doctor/SKILL.md"
+        }
+      ],
+      "id": "claim:file:.agents/skills/react-doctor/SKILL.md",
+      "reason": "no Module Map entry claims this file",
+      "subject": "file:.agents/skills/react-doctor/SKILL.md"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".moon/tasks/all.yml"
+        }
+      ],
+      "id": "claim:file:.moon/tasks/all.yml",
+      "reason": "no Module Map entry claims this file",
+      "subject": "file:.moon/tasks/all.yml"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": ".moon/workspace.yml"
+        }
+      ],
+      "id": "claim:file:.moon/workspace.yml",
+      "reason": "no Module Map entry claims this file",
+      "subject": "file:.moon/workspace.yml"
+    },
+    {
+      "evidence": [
+        {
+          "confidence": 1.0,
+          "provenance_kind": "graph",
+          "source_file": "mockgen.go"
+        }
+      ],
+      "id": "claim:file:mockgen.go",
+      "reason": "no Module Map entry claims this file",
+      "subject": "file:mockgen.go"
+    }
+  ]
+}
